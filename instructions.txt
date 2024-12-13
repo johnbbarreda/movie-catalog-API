@@ -1,0 +1,34 @@
+Build an ExpressJS API for a movie catalog system with
+    Comments
+    CRUD operations for Admin functionality
+    Authentication and Login
+Features:
+    Users must be able to register and login using an email and a password
+        Add isAdmin as a property
+    Authenticated users should be able to:
+        Add comments to a movie
+        Get comments from a movie
+    Each movie should have fields:
+        title, directory, year, description, genre, comments (subdocument array)
+    Only Admin users can"
+        Create, Update, and Delete movies in the catalog
+    All Users can:
+        Retrieve movies from the catalog
+        Retrieve a single movie by id
+Other Requirements:
+    Create a movieApp.json in the project folder and add all available routes
+        {
+        "endpoints": {
+            "login":"/login",
+            "register":"/register",
+            "addMovie": "/addMovie",
+            "getAllMovies":"/getMovies",
+            "getMovieById":"/getMovie",
+            "updateMovie":"/updateMovie",
+            "deleteMovie":"/deleteMovie",
+            "addMovieComment":"/addComment",
+            "getMovieComments":"/getComments"
+            }
+        }   
+    Add appropriate error handling, HTTP status, response messages
+    Do not pass id in the request body
